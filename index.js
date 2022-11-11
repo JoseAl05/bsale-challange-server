@@ -22,16 +22,16 @@ app.use(bodyParser.json());
 // Define Static Files Path
 
 app.use("/api", appRouter);
-app.use("/src", express.static(path.join(__dirname, "..", "client", "src")));
-app.use(
-  "/public",
-  express.static(path.join(__dirname, "..", "client", "public"))
-);
+// app.use("/src", express.static(path.join(__dirname, "..", "client", "src")));
+// app.use(
+//   "/public",
+//   express.static(path.join(__dirname, "..", "client", "public"))
+// );
 
 // Main Route
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "client", "src", "index.html"));
-});
+// app.get("/*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "..", "client","index.html"));
+// });
 
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server running...!");
