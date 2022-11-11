@@ -22,11 +22,11 @@ app.use(bodyParser.json());
 // Define Static Files Path
 
 app.use("/api", appRouter);
+app.use("/src", express.static(path.join(__dirname, "..", "client", "src")));
 app.use(
   "/public",
   express.static(path.join(__dirname, "..", "client", "public"))
 );
-app.use("/src", express.static(path.join(__dirname, "..", "client", "src")));
 
 // Main Route
 app.get("/*", (req, res) => {
