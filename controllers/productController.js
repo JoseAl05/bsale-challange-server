@@ -25,9 +25,24 @@ module.exports = {
         return await Product
             .findAll({
                 where:{
-                    name:{
-                        [Op.substring]: req.params.name
-                    }
+                    [Op.or]:
+                    [
+                        {
+                            name:{
+                                [Op.substring]: `%${req.params.name}%`
+                            }
+                        },
+                        {
+                            name:{
+                                [Op.startsWith]: `%${req.params.name}`
+                            }
+                        },
+                        {
+                            name:{
+                                [Op.endsWith]: `${req.params.name}%`
+                            }
+                        }
+                    ]
                 }
             })
             .then(products => res.status(200).json(products))
