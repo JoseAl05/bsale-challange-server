@@ -71,7 +71,6 @@ GET /api/products
     "discount": 0,
     "category": 3
   },
-  .................
 ]
 ```
 
@@ -108,7 +107,6 @@ GET /api/products
     "id": 4,
     "name": "bebida"
   },
-  .................
 ]
 ```
 
@@ -162,7 +160,6 @@ GET /api/products
     "discount": 0,
     "category": 1
   },
-  .................
 ]
 ```
 
