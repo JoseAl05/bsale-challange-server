@@ -280,6 +280,8 @@ Realiza una petición
   http://localhost:3000/api/productsBySearch/:name
 ```
 
+## Probar API en Producción
+
 Tambien está disponible el siguiente link de producción para utilizar la API.
 
 ```bash
