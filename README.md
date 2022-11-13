@@ -1,6 +1,7 @@
 
 # BSALE Challange Server Code
 
+El siguiente proyecto es un desafio por parte de BSALE con el objetivo de medir los conocimientos para interactuar con una base de datos a través de una aplicación web, implementando cliente y servidor.
 En este proyecto se encuentra la API para el consumo de datos de Productos y Categorías.
 
 
@@ -16,6 +17,10 @@ Para la conexión y consultas a la base de datos se uso el ORM (Object Relationa
  - [Express](https://expressjs.com/es/)
  - [Sequelize](https://sequelize.org/)
  - [MySQL](https://www.mysql.com/)
+
+ #### Deploy
+
+ - [Railway](https://railway.app/)
 
 
 ## API Reference
