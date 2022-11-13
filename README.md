@@ -78,7 +78,7 @@ GET /api/products
 ### Get Categories
 
 ```http
-  GET /api/categories
+GET /api/categories
 ```
 
 #### Respuesta
@@ -113,7 +113,7 @@ GET /api/products
 ### Get Products by Category
 
 ```http
-  GET /api/productsByCategory/:id
+GET /api/productsByCategory/:id
 ```
 
 #### Parámetros
@@ -166,7 +166,7 @@ GET /api/products
 ### Get Products by Search
 
 ```http
-  GET /api/productsBySearch/:name
+GET /api/productsBySearch/:name
 ```
 
 #### Parámetros
