@@ -23,7 +23,7 @@ Para la conexión y consultas a la base de datos se uso el ORM (Object Relationa
 ### Get All Products
 
 ```http
-  GET /api/products
+GET /api/products
 ```
 #### Respuesta
 
